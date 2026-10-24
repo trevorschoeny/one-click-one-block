@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "oneclickoneblock",
+  "version": "${version}",
+  "name": "One Click, One Block",
+  "description": "A single click with an instant-mining tool breaks exactly one block. Holding the button mines as usual.",
+  "authors": [
+    "trevorschoeny"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/one-click-one-block",
+    "sources": "https://github.com/trevorschoeny/one-click-one-block"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "mixins": [
+    "oneclickoneblock.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~26.3"
+  }
+}
