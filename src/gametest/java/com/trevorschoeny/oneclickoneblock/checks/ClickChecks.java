@@ -17,10 +17,10 @@ import testgallery.SceneWorld;
  */
 public class ClickChecks implements FabricClientGameTest {
     /**
-     * A quick click is 1 to 3 ticks; 3 is a slow one, as long as the pause. Vanilla
-     * breaks 3 blocks with it.
+     * A quick click is 1 or 2 ticks; 2 is as long as the pause. Vanilla
+     * breaks 2 blocks with it.
      */
-    private static final int CLICK_TICKS = 3;
+    private static final int CLICK_TICKS = 2;
 
     @Override
     public void runTest(ClientGameTestContext ctx) {
@@ -45,7 +45,7 @@ public class ClickChecks implements FabricClientGameTest {
             expectBroken(ctx, scene, stone, 1, "one click with the pickaxe");
 
             // Station "oneclickoneblock:hold": holding still digs in a row. 4 of the 5 blocks
-            // are in reach; the mod's pause puts them on ticks 1, 5, 6 and 7 of the hold.
+            // are in reach; the mod's pause puts them on ticks 1, 4, 5 and 6 of the hold.
             ctx.getInput().pressKey(options -> options.keyHotbarSlots[0]);
             JsonObject hold = scene.station("oneclickoneblock:hold");
             faceRow(ctx, scene, hold);
