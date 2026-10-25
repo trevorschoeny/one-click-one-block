@@ -86,8 +86,6 @@ processResources {
 // here. Only Lead runs these tasks.
 modrinth {
     token = System.getenv("MODRINTH_TOKEN")
-    // No Modrinth project until Trev approves the first release (new-mod-setup.md step 7).
-    // Left empty so a publish fails instead of creating one.
     projectId = "b1oYXfHH"
     versionNumber = property('oneclickoneblock_version')
     versionName = "One Click, One Block ${property('oneclickoneblock_version')}"
