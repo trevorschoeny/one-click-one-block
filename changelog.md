@@ -1,1 +1,7 @@
-Placeholder. The first release's changelog is drafted in Notion before release.
+## 1.0.0
+
+First release.
+
+#### Added
+
+- A click with an instant-mining tool breaks exactly one block. Holding the button mines as usual.
